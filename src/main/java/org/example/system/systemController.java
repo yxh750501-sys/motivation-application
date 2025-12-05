@@ -5,3 +5,7 @@ public class systemController {
         System.out.println("== motivation 종료 ==");
     }
 }
+class SystemController{
+
+
+}

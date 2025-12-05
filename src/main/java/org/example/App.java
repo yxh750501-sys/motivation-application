@@ -24,7 +24,6 @@ public class App {
             String cmd = sc.nextLine().trim();
 
             if (cmd.equals("exit")) {
-
                 systemController.exit();
                 break;
             } else if (cmd.length() == 0) {
@@ -33,14 +32,16 @@ public class App {
             }
 
             if (cmd.equals("add")) {
-
                 motivationController.add();
             } else if (cmd.equals("list")) {
-
                 motivationController.list();
+            } else if (cmd.startsWith("del")) {
+                motivationController.delete(cmd);
             } else {
                 System.out.println("사용할 수 없는 명령어야");
             }
         }
+
+
     }
 }

@@ -1,6 +1,5 @@
 package org.example.motivation.controller;
 
-
 import org.example.motivation.entity.Motivation;
 
 import java.util.ArrayList;
